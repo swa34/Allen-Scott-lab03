@@ -33,7 +33,6 @@ int main() {
 	for (int i = 0; i < sizeArray; i++) {
 	  randArray[i] = (rand() % 100) + 1;
 	}//for
-	int i;
 	cout << "Array contents: ";
 	printArray(randArray, sizeArray);
 	cout << "Max value is: " << getMax(randArray, sizeArray) << endl;
@@ -52,7 +51,7 @@ int main() {
 	  vector<int> vec;
 	  vec.push_back(sizeArray);
 	  int array = vec.size();
-	  vector<int> arr[array];
+	  vector<int> arr(array);
 	}
 	cout << "Array contents: ";
 	printArray(arr, sizeArray);
